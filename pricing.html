@@ -25,72 +25,76 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html">SigRex</a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="home.html">SigRex</a>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
 
 
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
 
-				<li class="nav-item active">
-					<a class="nav-link" href="pricing.html">pricing <span class="sr-only">(current)</span></a>
-				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about_me.html">Me</a>
+                        <a class="dropdown-item" href="about_strategy.html">This Strategy</a>
+                    </div>
+                </li>
 
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						About
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Me</a>
-						<a class="dropdown-item" href="#">This Strategy</a>
-					</div>
-				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="tuorial1.html">Tutorial1</a>
+                        <a class="dropdown-item" href="tuorial2.html">Tutorial2</a>
+                        <a class="dropdown-item" href="tuorial3.html">Tutorial3</a>
+                        <a class="dropdown-item" href="tuorial4.html">Tutorial4</a>
+                        <a class="dropdown-item" href="tuorial5.html">Tutorial5</a>
+                        <a class="dropdown-item" href="tuorial6.html">Tutorial6</a>
+                    </div>
 
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Tutorials
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Tutorial1</a>
-						<a class="dropdown-item" href="#">Tutorial2</a>
-						<a class="dropdown-item" href="#">Tutorial3</a>
-					</div>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0 mr-2">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-					Login
-				</button>
-			</form>
-			<form class="form-inline my-2 my-lg-0">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-					Register
-				</button>
-			</form>
-		</div>
-	</nav>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="pricing.html">Pricing <span class="sr-only">(current)</span></a>
+                </li>
+                </li>
+            </ul>
+
+
+            <form class="form-inline my-2 my-lg-0 mr-2">
+                <input class="btn btn-light" type="button" onclick=location.href="login.html" value="Login" />
+
+            </form>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="btn btn-light" type="button" onclick=location.href="register.html" value="Register" />
+            </form>
+
+
+        </div>
+    </nav>
+
 
 
 
 	
 <div class="container mb-5 mt-5">
 
-	<div class="row">
-        <div class="col-md-10 offset-md-1 text-center py-2">
-            <h2 class="h1 font-weight-normal text-primary text-center mb-0">Our plans</h2>
-        </div>
-    </div>
-    
-</br>
+	
+    <div class="card-header h5 text-white bg-primary text-center">Our plans</div>
+    <br>
     <div class="pricing card-deck flex-column flex-md-row mb-3">
 
         <div class="card card-pricing text-center px-3 mb-4">
+
+
+
+
+            
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
             <div class="bg-transparent card-header pt-4 border-0">
                 <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">$<span class="price">3</span><span class="h6 text-muted ml-2">/ per month</span></h1>
@@ -103,7 +107,11 @@
                     <li>Monthly updates</li>
                     <li>Free cancelation</li>
                 </ul>
-                <button type="button" class="btn btn-outline-secondary mb-3">Order now</button>
+
+ 
+                    <input class="btn btn-outline-secondary mb-3" type="button" onclick=location.href="card.html" value="Order now" />
+              
+
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4">
@@ -118,7 +126,7 @@
                     <li>Monthly updates</li>
                     <li>Free cancelation</li>
                 </ul>
-                <a href="https://www.totoprayogo.com" target="_blank" class="btn btn-primary mb-3">Order Now</a>
+                    <input class="btn btn-primary mb-3" type="button" onclick=location.href="card.html" value="Order now" />
             </div>
         </div>
       
@@ -134,7 +142,7 @@
                     <li>Monthly updates</li>
                     <li>Free cancelation</li>
                 </ul>
-                <button type="button" class="btn btn-outline-secondary mb-3">Order now</button>
+                <input class="btn btn-outline-secondary mb-3" type="button" onclick=location.href="card.html" value="Order now" />
             </div>
         </div>
     </div>
